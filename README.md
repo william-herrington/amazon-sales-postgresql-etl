@@ -68,7 +68,7 @@ Raw data fields were intentionally stored as 'TEXT' to simulate real-world messy
 - CSV successfully imported
 - Row count verified
 
-![Raw Row Count](images/03_raw_row_count.png)
+![Raw Row Count](IMAGES/03_raw_row_count.png)
 
 ---
 
@@ -81,7 +81,7 @@ Performed exploratory checks to identify data quality issues:
 - Duplicate checks
 - Basic price validation
 
-![Profiling Results](images/04_profiling_missing_values.png)
+![Profiling Results](IMAGES/04_profiling_missing_values.png)
 
 ---
 
@@ -104,9 +104,9 @@ Performed exploratory checks to identify data quality issues:
 - Applied rating (0–5) validation
 - Applied price (> 0) validation
 
-![Stage Table Created](images/05_stage_table_created.png)
+![Stage Table Created](IMAGES/05_stage_table_created.png)
 
-![Numeric Conversion Proof](images/06_stage_numeric_conversion.png)
+![Numeric Conversion Proof](IMAGES/06_stage_numeric_conversion.png)
 
 ---
 
@@ -136,7 +136,7 @@ To ensure pricing accuracy, a validation layer was implemented within the Stage 
 
 All discount percentages matched the recalculated values within tolerance, confirming full pricing integrity across the dataset.
 
-![Discount Audit Summary](images/07_discount_audit.png)
+![Discount Audit Summary](IMAGES/07_discount_audit.png)
 
 This audit layer simulates real-world data quality validation performed in production ETL pipelines.
 
@@ -157,7 +157,7 @@ The Clean table:
 
 - Rows in clean table: **1,465**
 
-![Clean Row Count](images/08_clean_row_count.png)
+![Clean Row Count](IMAGES/08_clean_row_count.png)
 
 The dataset is now fully validated and ready for analytics, BI dashboards, or feature engineering.
 
@@ -199,7 +199,7 @@ discounted_price * rating_count
 
 This is a simplified interest metric used to approximate product demand intensity (not actual revenue).
 
-![Feature Preview](images/09_features_preview.png)
+![Feature Preview](IMAGES/09_features_preview.png)
 
 The dataset now includes engineered features suitable for ranking, segmentation, and BI dashboard integration. 
 
@@ -223,7 +223,7 @@ Highlights the most-reviewed products as a proxy for product popularity.
 
 Analyzes pricing spread by category to identify where discount margins are strongest. 
 
-![Insight Preview](images/10_insights_top_categories.png)
+![Insight Preview](IMAGES/10_insights_top_categories.png)
 
 These queries demonstrate how the dataset transitions from raw ingestion to business-ready analytical output. 
 
